@@ -1,0 +1,14 @@
+﻿string[] array = { "hello", "2", "world", ":-)" };
+string[] array2 = new string[array.Length];
+for (int i = 0; i < array.Length; i++)
+{
+    if (array[i].Length <= 3) array2[i] = array[i];
+}
+void PrintArray(string[] array)    // Метод печатает массив
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+}
+PrintArray(array2);
