@@ -1,8 +1,8 @@
 ﻿string[] array = { "hello", "2", "world", ":-)" };
 string[] array2 = new string[array.Length];
-for (int i = 0; i < array.Length; i++)
+for (int i = 0; i < array.Length; i++)   // цикл по массиву
 {
-    if (array[i].Length <= 3) array2[i] = array[i];
+    if (array[i].Length <= 3) array2[i] = array[i]; // проверка условия
 }
 void PrintArray(string[] array)    // Метод печатает массив
 {
